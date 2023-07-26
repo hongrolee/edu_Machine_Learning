@@ -14,26 +14,24 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/mdb.min.css')}}" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.min.css')}}" />
-    <style type="text/css">
 
+    <style type="text/css">
       html,
       body,
       header,
       .carousel {
         height: 100%;
       }
-  
       @media (min-width: 800px) and (max-width: 850px) {
               .navbar:not(.top-nav-collapse) {
                   background: #1C2331!important;
               }
           }
-  
       .hangul {
           font-family: 'Nanum Barun Gothic' !important;
       }
-  
     </style>
+    
 </head>
 
 <body>
@@ -52,60 +50,6 @@
         }
       </style>
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-        <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-            <strong>MDB</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#intro">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                  target="_blank">Learn Bootstrap 5</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Download MDB UI KIT</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav d-flex flex-row">
-              <!-- Icons -->
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                  target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Navbar -->
-
       <!-- Background image -->
       <div id="intro" class="bg-image vh-100 shadow-1-strong">
         <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
@@ -120,8 +64,8 @@
       ">
           <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white">
-              <h1 class="mb-3">제품 가격 예측</h1>
-              <h5 class="mb-4">제품의 가로, 세로, 높이를 입력하시면 무게를 예측하실 수 있습니다.</h5>
+              <h1 class="mb-3">인공지능 붓꽃 종류 분류 사이트</h1>
+              <h5 class="mb-4">붓꽃의 꽃잎 길이와 넓이, 꽃받침 길이와 넓이를 입력하시면 인공지능 모델에 의해 자동 분류가 가능합니다.</h5>
               <a
                 class="btn btn-outline-light btn-lg m-2"
                 href="https://www.youtube.com/watch?v=c9B4TPnak1A"
@@ -163,22 +107,22 @@
                     <!-- Default input -->
                     <div class="form-group">
                         <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">꽃받침 길이</label>
-                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="sepal_length" class="form-control" id="formGroupExampleInput" placeholder="가로 길이를 입력하세요.">
+                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="sepal_length" class="form-control" id="formGroupExampleInput" placeholder="길이를 입력하세요.">
                     </div>
 
                     <div class="form-group">
                         <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">꽃받침 넓이</label>
-                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="sepal_width" class="form-control" id="formGroupExampleInput" placeholder="꽃받침의 길이를 입력하세요.">
+                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="sepal_width" class="form-control" id="formGroupExampleInput" placeholder="넓이를 입력하세요.">
                     </div>                    
 
                     <div class="form-group">
                         <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">꽃잎 길이</label>
-                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="petal_length" class="form-control" id="formGroupExampleInput" placeholder="꽃잎의 길이를 입력하세요.">
+                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="petal_length" class="form-control" id="formGroupExampleInput" placeholder="길이를 입력하세요.">
                     </div>                    
 
                     <div class="form-group">
                         <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">꽃잎 넓이</label>
-                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="petal_width" class="form-control" id="formGroupExampleInput" placeholder="꽃잎의 넓이를 입력하세요.">
+                        <input style="font-family: 'Nanum Barun Gothic'" type="text" name="petal_width" class="form-control" id="formGroupExampleInput" placeholder="넓이를 입력하세요.">
                     </div>                           
 
                 <!-- Default form group -->
